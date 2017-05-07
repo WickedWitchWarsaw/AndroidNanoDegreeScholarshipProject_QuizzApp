@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">UdacityScholarshipProjectQuizzApp</string>
+
+    <string name="draculaComment">Bit into the knowledge of a fellow victim, arise from the dark... Ha ha ha!!</string>
+    <string name="kingComment">You are the King of Knowledge, you bash-ed the system, be big, be proud...</string>
+    <string name="jokerComment">Spend more time learning, less being evil... Your results are a joke... </string>
+
+
+    <string name="question1">1. question question >question question >question question >question question </string>
+    <string name="question2">2. question question >question question >question question >question question </string>
+    <string name="question3">3. question question >question question >question question >question question </string>
+    <string name="question4">4. question question >question question >question question >question question </string>
+    <string name="question5">5. question question >question question >question question >question question </string>
+    <string name="question6">6. question question >question question >question question >question question </string>
+    <string name="question7">7. question question >question question >question question >question question </string>
+    <string name="question8">8. question question >question question >question question >question question </string>
+    <string name="question9">9. question question >question question >question question >question question </string>
+    <string name="question10">10. question question >question question >question question >question question </string>
+    <string name="question11">11. question question >question question >question question >question question </string>
+    <string name="question12">12. question question >question question >question question >question question </string>
+    <string name="question13">13. question question >question question >question question >question question </string>
+    <string name="question14">14. question question >question question >question question >question question </string>
+    <string name="question15">15. question question >question question >question question >question question </string>
+
+    <string name="answerTrue">TRUE</string>
+    <string name="answerFalse">FALSE</string>
+
+
+</resources>

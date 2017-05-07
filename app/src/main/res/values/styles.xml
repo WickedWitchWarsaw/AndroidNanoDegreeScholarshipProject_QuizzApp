@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="resultTitle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">45sp</item>
+    </style>
+
+    <style name="scoreTitle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#757575</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="scoreMark" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">65sp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="markComment" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#757575</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="questionStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#212121</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="answerStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#757575</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="answerStyleText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#3D5AFE</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="btnNext" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:text">NEXT -----></item>
+    </style>
+
+
+</resources>
