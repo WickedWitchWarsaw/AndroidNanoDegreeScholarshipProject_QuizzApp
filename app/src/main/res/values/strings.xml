@@ -6,24 +6,42 @@
     <string name="jokerComment">Spend more time learning, less being evil... Your results are a joke... </string>
 
 
-    <string name="question1">1. question question >question question >question question >question question </string>
-    <string name="question2">2. question question >question question >question question >question question </string>
-    <string name="question3">3. question question >question question >question question >question question </string>
-    <string name="question4">4. question question >question question >question question >question question </string>
-    <string name="question5">5. question question >question question >question question >question question </string>
-    <string name="question6">6. question question >question question >question question >question question </string>
-    <string name="question7">7. question question >question question >question question >question question </string>
-    <string name="question8">8. question question >question question >question question >question question </string>
-    <string name="question9">9. question question >question question >question question >question question </string>
-    <string name="question10">10. question question >question question >question question >question question </string>
-    <string name="question11">11. question question >question question >question question >question question </string>
-    <string name="question12">12. question question >question question >question question >question question </string>
-    <string name="question13">13. question question >question question >question question >question question </string>
-    <string name="question14">14. question question >question question >question question >question question </string>
-    <string name="question15">15. question question >question question >question question >question question </string>
+    <string name="question1">1. Shell scripts are written with the extension: .sh </string>
+    <string name="question2">2. Every shell script is end with: #!/bin/bash  </string>
+    <string name="question3">3. Operations on the float type requires use of the bash calculator </string>
+    <string name="question4">4. echo "xxx" displays xxx on the console</string>
+    <string name="question5">5. Every loop is ended with the: "END" keyword </string>
+    <string name="question6">6. You can increment a in the following way: </string>
+    <string name="question7">7. Select key words in bash loops. </string>
+    <string name="question8">8. Select valid ways to comment a section on code: </string>
+    <string name="question9">9. Choose the correct syntax for the statement "INTEGER1 is not equal to INTEGER2" </string>
+    <string name="question10">10. Which key word do you use to end an "if" statement </string>
+    <string name="question11">11. The command used to show the current folder path is:  </string>
+    <string name="question12">12. What command do you have to use to go to the parent directory? </string>
+    <string name="question13">13. What command is used to get input from the console? </string>
+
 
     <string name="answerTrue">TRUE</string>
     <string name="answerFalse">FALSE</string>
 
+    <string name="answer6A">a=$[a+1]</string>
+    <string name="answer6B">((a++))</string>
+    <string name="answer6C">a=$((a+1))</string>
+    <string name="answer6D">((a+=1))</string>
+
+    <string name="answer7A">for, do, done</string>
+    <string name="answer7B">while, do, done</string>
+    <string name="answer7C">foreach, in, done</string>
+    <string name="answer7D">select, every, in, done</string>
+
+    <string name="answer8A">#text to comment out</string>
+    <string name="answer8B">//text to comment out</string>
+    <string name="answer8C">/**text to comment out*/</string>
+    <string name="answer8D">&lt;&lt;COMMENT text to comment out COMMENT</string>
+
+    <string name="answer9A">INTEGER1 isNotEqualTo INTEGER2</string>
+    <string name="answer9B">INTEGER1 != INTEGER2</string>
+    <string name="answer9C">INTEGER1 -ne INTEGER2/</string>
+    <string name="answer9D">INTEGER1 &lt;=> INTEGER2</string>
 
 </resources>

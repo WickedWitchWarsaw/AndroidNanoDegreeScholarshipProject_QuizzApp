@@ -29,25 +29,29 @@
                 android:id="@+id/answerQ6checkBox1"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer6A"/>
 
             <CheckBox
                 android:id="@+id/answerQ6checkBox2"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer6B"/>
 
             <CheckBox
                 android:id="@+id/answerQ6checkBox3"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer6C"/>
 
             <CheckBox
                 android:id="@+id/answerQ6checkBox4"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer6D"/>
 
         </LinearLayout>
 
@@ -67,25 +71,29 @@
                 android:id="@+id/answerQ7checkBox1"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer7A"/>
 
             <CheckBox
                 android:id="@+id/answerQ7checkBox2"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer7B"/>
 
             <CheckBox
                 android:id="@+id/answerQ7checkBox3"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer7C"/>
 
             <CheckBox
                 android:id="@+id/answerQ7checkBox4"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer7D"/>
 
         </LinearLayout>
 
@@ -120,7 +128,8 @@
             style="@style/questionStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question8" />
+            android:text="@string/question8"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,25 +140,29 @@
                 android:id="@+id/answerQ8checkBox1"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer8A"/>
 
             <CheckBox
                 android:id="@+id/answerQ8checkBox2"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer8B"/>
 
             <CheckBox
                 android:id="@+id/answerQ8checkBox3"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer8C"/>
 
             <CheckBox
                 android:id="@+id/answerQ8checkBox4"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer8D"/>
 
         </LinearLayout>
 
@@ -169,25 +182,29 @@
                 android:id="@+id/answerQ9checkBox1"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer9A"/>
 
             <CheckBox
                 android:id="@+id/answerQ9checkBox2"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer9B"/>
 
             <CheckBox
                 android:id="@+id/answerQ9checkBox3"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer9C"/>
 
             <CheckBox
                 android:id="@+id/answerQ9checkBox4"
                 style="@style/answerStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/answer9D"/>
 
         </LinearLayout>
 
