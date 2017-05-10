@@ -1,6 +1,5 @@
 package com.wickedwitchwarsaw.udacityscholarshipprojectquizzapp;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,5 +25,4 @@ public class DraculaResult extends AppCompatActivity {
         scorePointDracula.setText(collectedPoints);
 
     }
-
 }

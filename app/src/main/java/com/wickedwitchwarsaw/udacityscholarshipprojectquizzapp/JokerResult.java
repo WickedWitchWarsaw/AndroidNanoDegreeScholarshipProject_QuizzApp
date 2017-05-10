@@ -13,8 +13,4 @@ public class JokerResult extends AppCompatActivity {
         setContentView(R.layout.activity_joker_result);
     }
 
-    public static void startJokerResult(Context context){
-        Intent startJokerIntent = new Intent (context, JokerResult.class);
-        context.startActivity(startJokerIntent);
-    }
 }

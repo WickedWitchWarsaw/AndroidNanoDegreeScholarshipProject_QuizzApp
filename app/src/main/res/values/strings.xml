@@ -41,7 +41,7 @@
 
     <string name="answer9A">INTEGER1 isNotEqualTo INTEGER2</string>
     <string name="answer9B">INTEGER1 != INTEGER2</string>
-    <string name="answer9C">INTEGER1 -ne INTEGER2/</string>
+    <string name="answer9C">INTEGER1 -ne INTEGER2</string>
     <string name="answer9D">INTEGER1 &lt;=> INTEGER2</string>
 
 </resources>

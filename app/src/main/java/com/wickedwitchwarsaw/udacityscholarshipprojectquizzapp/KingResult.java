@@ -13,8 +13,5 @@ public class KingResult extends AppCompatActivity {
         setContentView(R.layout.activity_king_result);
     }
 
-    public static void startKingResult(Context context){
-        Intent startKingIntent = new Intent(context, KingResult.class);
-        context.startActivity(startKingIntent);
-    }
+
 }
