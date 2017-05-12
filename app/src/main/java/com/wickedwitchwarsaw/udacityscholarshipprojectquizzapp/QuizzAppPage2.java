@@ -66,6 +66,7 @@ public class QuizzAppPage2 extends AppCompatActivity {
     private int points = 0;
     int tempPoints;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,9 +77,8 @@ public class QuizzAppPage2 extends AppCompatActivity {
         tempPoints = startPage2intent.getIntExtra("PointsPage1", points);
     }
 
-
     // CHECK ANSWERS AND GET POINTS FROM PAGE 2
-    public int getPointsPage3() {
+    public int getPointsPage2() {
         checkCheckBoxGetPoint(answerQ6checkBox1);
         checkCheckBoxGetPoint(answerQ6checkBox2);
         checkCheckBoxGetPoint(answerQ6checkBox3);
@@ -92,14 +92,11 @@ public class QuizzAppPage2 extends AppCompatActivity {
     }
 
 
-    // ========> Go to page 3 <========
-
     @OnClick(R.id.btnNextPage2)
     public void goToPage3() {
-        getPointsPage3();
+        getPointsPage2();
         points = points + tempPoints;
         startIntentPage3();
-
     }
 
     public void startIntentPage3() {
@@ -119,6 +116,5 @@ public class QuizzAppPage2 extends AppCompatActivity {
     public void addPoint(int point) {
         points = points + point;
     }
-
 }
 

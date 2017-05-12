@@ -13,7 +13,6 @@ public class DraculaResult extends AppCompatActivity {
     @BindView(R.id.scorePointDracula)
     protected TextView scorePointDracula;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +20,7 @@ public class DraculaResult extends AppCompatActivity {
         ButterKnife.bind(this);
 
         Intent draculaIntent = getIntent();
-        String collectedPoints = draculaIntent.getStringExtra("PointsPage1");
+        String collectedPoints = draculaIntent.getStringExtra("PointsPage2");
         scorePointDracula.setText(collectedPoints);
-
     }
 }

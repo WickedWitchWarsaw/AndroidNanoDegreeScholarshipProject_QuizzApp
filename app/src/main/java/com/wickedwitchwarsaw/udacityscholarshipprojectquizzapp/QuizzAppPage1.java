@@ -29,7 +29,6 @@ public class QuizzAppPage1 extends AppCompatActivity {
 
     private int points = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,6 @@ public class QuizzAppPage1 extends AppCompatActivity {
         startIntentPage2();
     }
 
-
     // CHECK ANSWERS AND GET POINTS FROM PAGE 1
     public int getPointsPage1() {
         checkRadioBntGetPoint(answerQ1True);
@@ -53,7 +51,6 @@ public class QuizzAppPage1 extends AppCompatActivity {
         checkRadioBntGetPoint(answerQ5False);
         return points;
     }
-
 
     public void startIntentPage2() {
         Intent startPage2intent = new Intent(this, QuizzAppPage2.class);

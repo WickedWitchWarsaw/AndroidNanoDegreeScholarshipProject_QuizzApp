@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     public void startQuizzAppIntent(Context context) {
         Intent startQuizz = new Intent(context, QuizzAppPage1.class);
         context.startActivity(startQuizz);
