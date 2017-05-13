@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -63,6 +64,7 @@ public class QuizzAppPage2 extends AppCompatActivity {
     @BindView(R.id.answerQ9checkBox4)
     protected CheckBox answerQ9checkBox4;
 
+    public static final String KEY_POINTS_PAGE_2 = "PointsPage2";
     private int points = 0;
     int tempPoints;
 
@@ -74,20 +76,15 @@ public class QuizzAppPage2 extends AppCompatActivity {
         ButterKnife.bind(this);
 
         Intent startPage2intent = getIntent();
-        tempPoints = startPage2intent.getIntExtra("PointsPage1", points);
+        tempPoints = startPage2intent.getIntExtra(QuizzAppPage1.KEY_POINTS_PAGE_1, points);
     }
 
     // CHECK ANSWERS AND GET POINTS FROM PAGE 2
     public int getPointsPage2() {
-        checkCheckBoxGetPoint(answerQ6checkBox1);
-        checkCheckBoxGetPoint(answerQ6checkBox2);
-        checkCheckBoxGetPoint(answerQ6checkBox3);
-        checkCheckBoxGetPoint(answerQ6checkBox4);
-        checkCheckBoxGetPoint(answerQ7checkBox1);
-        checkCheckBoxGetPoint(answerQ7checkBox2);
-        checkCheckBoxGetPoint(answerQ8checkBox1);
-        checkCheckBoxGetPoint(answerQ8checkBox4);
-        checkCheckBoxGetPoint(answerQ9checkBox3);
+        checkCheckBoxQuestion6();
+        checkCheckBoxQuestion7();
+        checkCheckBoxQuestion8();
+        checkCheckBoxQuestion9();
         return points;
     }
 
@@ -96,20 +93,51 @@ public class QuizzAppPage2 extends AppCompatActivity {
     public void goToPage3() {
         getPointsPage2();
         points = points + tempPoints;
+        Toast.makeText(this, "Phase two complete, points collected: " + points, Toast.LENGTH_SHORT).show();
         startIntentPage3();
     }
 
     public void startIntentPage3() {
         Intent startPage3intent = new Intent(this, QuizzAppPage3.class);
-        startPage3intent.putExtra("PointsPage2", points);
+        startPage3intent.putExtra(KEY_POINTS_PAGE_2, points);
         startActivity(startPage3intent);
     }
 
 
-    //refactored methods
-    public void checkCheckBoxGetPoint(CheckBox checkBox) {
-        if (checkBox.isChecked()) {
+    //Checkbox checking methods
+    public void checkCheckBoxQuestion6() {
+        if (answerQ6checkBox1.isChecked() && answerQ6checkBox2.isChecked()
+                && answerQ6checkBox3.isChecked() && answerQ6checkBox4.isChecked()) {
             addPoint(1);
+        } else {
+            addPoint(0);
+        }
+    }
+
+    public void checkCheckBoxQuestion7() {
+        if (answerQ7checkBox1.isChecked() && answerQ7checkBox2.isChecked()
+                && !answerQ7checkBox3.isChecked() && !answerQ7checkBox4.isChecked()) {
+            addPoint(1);
+        } else {
+            addPoint(0);
+        }
+    }
+
+    public void checkCheckBoxQuestion8() {
+        if (answerQ8checkBox1.isChecked() && !answerQ8checkBox2.isChecked()
+                && !answerQ8checkBox3.isChecked() && answerQ8checkBox4.isChecked()) {
+            addPoint(1);
+        } else {
+            addPoint(0);
+        }
+    }
+
+    public void checkCheckBoxQuestion9() {
+        if (!answerQ9checkBox1.isChecked() && !answerQ9checkBox2.isChecked()
+                && answerQ9checkBox3.isChecked() && !answerQ9checkBox4.isChecked()) {
+            addPoint(1);
+        } else {
+            addPoint(0);
         }
     }
 

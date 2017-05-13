@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +29,7 @@ public class QuizzAppPage1 extends AppCompatActivity {
     protected RadioButton answerQ5False;
 
     private int points = 0;
+    public static final String KEY_POINTS_PAGE_1 = "PointsPage1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class QuizzAppPage1 extends AppCompatActivity {
     @OnClick(R.id.btnNextPage1)
     protected void goToPage2() {
         getPointsPage1();
+        Toast.makeText(this, "Phase one completed, points collected: " + points, Toast.LENGTH_SHORT).show();
         startIntentPage2();
     }
 
@@ -54,7 +57,7 @@ public class QuizzAppPage1 extends AppCompatActivity {
 
     public void startIntentPage2() {
         Intent startPage2intent = new Intent(this, QuizzAppPage2.class);
-        startPage2intent.putExtra("PointsPage1", points);
+        startPage2intent.putExtra(KEY_POINTS_PAGE_1, points);
         startActivity(startPage2intent);
     }
 

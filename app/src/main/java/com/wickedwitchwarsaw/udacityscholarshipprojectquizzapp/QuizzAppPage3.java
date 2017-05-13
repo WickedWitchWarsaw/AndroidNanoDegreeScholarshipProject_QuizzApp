@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 import butterknife.BindView;
@@ -41,7 +42,7 @@ public class QuizzAppPage3 extends AppCompatActivity {
         ButterKnife.bind(this);
 
         Intent startIntentPage3 = getIntent();
-        tempPoints = startIntentPage3.getIntExtra("PointsPage2", points);
+        tempPoints = startIntentPage3.getIntExtra(QuizzAppPage2.KEY_POINTS_PAGE_2, points);
     }
 
     public int getPointsPage3() {
@@ -57,21 +58,21 @@ public class QuizzAppPage3 extends AppCompatActivity {
     public void startJokerResult() {
         Intent jokerIntent = new Intent(this, JokerResult.class);
         String intentPoints = getStringPoints();
-        jokerIntent.putExtra("PointsPage2", intentPoints);
+        jokerIntent.putExtra(QuizzAppPage2.KEY_POINTS_PAGE_2, intentPoints);
         startActivity(jokerIntent);
     }
 
     public void startDraculaResult() {
         Intent draculaIntent = new Intent(this, DraculaResult.class);
         String intentPoints = getStringPoints();
-        draculaIntent.putExtra("PointsPage2", intentPoints);
+        draculaIntent.putExtra(QuizzAppPage2.KEY_POINTS_PAGE_2, intentPoints);
         startActivity(draculaIntent);
     }
 
     public void startKingResult() {
         Intent kingIntent = new Intent(this, KingResult.class);
         String intentPoints = getStringPoints();
-        kingIntent.putExtra("PointsPage2", intentPoints);
+        kingIntent.putExtra(QuizzAppPage2.KEY_POINTS_PAGE_2, intentPoints);
         startActivity(kingIntent);
     }
 
@@ -98,6 +99,7 @@ public class QuizzAppPage3 extends AppCompatActivity {
     protected void submitAnswers() {
         getPointsPage3();
         points = points + tempPoints;
+        Toast.makeText(this, "Quizz ended... Points collected: " + points, Toast.LENGTH_SHORT).show();
         if (points <= 6) {
             startJokerResult();
         }
